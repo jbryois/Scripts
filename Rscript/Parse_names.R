@@ -1,6 +1,6 @@
 library(stringr)
 
-d <- c("Julien Bryois, Nathan G Skene, Thomas Folkmann Hansen, Lisette Kogelman, Hunna J Watson, Anorexia Nervosa Working Group of the Psychiatric Genomics Consortium, International Headache Genetics Consortium, 23andMe, Gerome Breen, Cynthia Bulik, Ernest Arenas, Jens Hjerling-Leffler, Patrick F Sullivan")
+d <- c("Darina Czamara, Gökçen Eraslan, Christian M Page, Jari Lahti, Marius Lahti-Pulkkinen, Esa Hämäläinen, Eero Kajantie, Hannele Laivuori, Pia M Villa, Rebecca M Reynolds, Wenche Nystad, Siri E Håberg, Stephanie J London, Kieran J O’Donnell, Elika Garg, Michael J Meaney, Sonja Entringer, Pathik D Wadhwa, Claudia Buss, Meaghan J Jones, David TS Lin, Julie L MacIsaac, Michael S Kobor, Nastassja Koen, Heather J Zar, Karestan C Koenen, Shareefa Dalvie, Dan J Stein, Ivan Kondofersky, Nikola S Müller, Fabian J Theis, Katri Räikkönen, Elisabeth B Binder")
 format_names <- function(d) {
 d_split <- str_split(d,",") %>% unlist() %>% str_trim()
 first_letter <- substr(d_split,1,1)
